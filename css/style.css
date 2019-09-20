@@ -1,0 +1,183 @@
+/*
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../font/Montserrat/Montserrat-regulier.ttf');
+}
+*/
+
+/* ATELIER COULEUR :
+rose barbapapa :	#f9e7e7;
+orange : 			#d36135;
+vert lime :			#7fb069;
+bleu nuit :			#13262f;
+bleu ciel gris :	#6b818c;
+noir verdatre:		#1f2421;
+*/
+
+
+html, body{
+	margin: 0;
+	background-color: grey;
+	font-size: 16px;
+	font-family: 'Montserrat','Manjari', sans-serif;
+}
+
+/*TOP title*/
+#top{
+	margin: 0;
+	padding: 16px;
+	color: #1f2421;
+	background-color: #6b818c;
+	border: solid 7px #1f2421;
+}
+#hp-title{
+	margin: 0;
+	padding: 15px 0;
+	font-family:'Montserrat', 'Manjari', sans-serif;
+	font-size: 2.4em;
+}
+#sub_title{
+	font-family: 'Montserrat','Manjari', sans-serif;
+	font-size: 1em;
+}
+/*TOP title*/
+
+/* header - navbar */
+#header{
+	height: 75px;
+	margin: 0;
+	padding: 0;
+}
+#navbar{
+	display: flex;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.nav-menu{
+	height: 100%;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 1px solid #1f2421;
+	text-align: center;
+	background-color: #6b818c;
+	color: white;
+}
+.nav-menu:hover{
+	background-color: ;
+	color: #1f2421;
+}
+a:hover{
+	text-decoration: none;
+}
+
+#logo{
+	width: 65px;
+	height: 65px;
+	margin: auto;
+}
+
+/* header - navbar */
+
+/* background-image + fond transparent & responsive */
+#background-img{
+	background-image: url('../img/boxing.jpg');
+	background-repeat: repeat-x;
+	background-position: right;
+	display: flex;
+  	align-items: center;
+	height: 400px;
+	color: white;
+	max-width: 100%; 
+}
+#img-hp{
+	width: 100px;
+	height: auto;
+}
+#background-color-text{
+  background-color: rgba(85, 85, 85, .75);
+  padding: 10px 20px 10px 20px;
+  height: 260px;
+}
+#title-h1{
+	font-size: 2.8em;
+}
+#sub-h1-p{
+	max-width: 80%;
+	margin: auto;
+	font-size: 1em;
+}
+#main-page-bloc-citation{
+	height: 65px;
+}
+#main-page-text-citation{
+	display: none;
+	padding: 0 10px 0 10px; 
+}
+@media screen and (max-width: 1220px)
+{
+	/*TOP HEADER*/
+	#title-h1{
+		font-size: 2.3em;
+		padding-top: 20px;
+	}
+	#sub-h1-p{
+		max-width: 90%;
+		font-size: 0.9em;
+	}/*	* * * * FIN TOP HEADER*/
+	#text-citation{
+		display: none;
+	}
+	#main-page-text-citation{
+		display: block;
+		float: left;
+	}
+}
+@media screen and (max-width: 992px)
+{
+	#title-h1{
+		font-size: 1.6em;
+		padding-bottom: 20px;
+	}
+	#sub-h1-p{
+		font-size: 0.8em;
+		line-height: 1.6em;
+	}
+}
+@media screen and (max-width: 575px){
+	#header{
+		height: auto;
+	}
+	#navbar{
+		flex-direction: column;
+	}
+	.nav-menu{
+		border-left: 0;
+		border-top: 1px solid #1f2421;
+	}
+	#bloc-citation{
+		display: none;
+	}
+	#background-img{
+		background-position: left;
+	}
+	#title-h1{
+		padding-top: 30px;
+	}
+}
+
+/* Background-image + fond transparent & reponsive */
+
+/* MAIN-PAGE */
+#main-page{
+	background-color: red;
+
+}
+
+/**PAGE**		CONTACT		**PAGE**/
+
+#map{
+	height: 400px;
+	width: 100%;
+	background-color: red;
+}
