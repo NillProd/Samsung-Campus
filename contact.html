@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width", initial-scale="1">
-
+	<link rel="canonical" href="index.html" /> <!-- balise canonical : évite les doublons dans le moteur de recherche -->
+	<meta name="robots" content="none,noodp,noydir"> <!--Bloque indexation + follow bot google&yahoo-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 	<title>Le charisme d'une star ? c'est possible</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
-	<link href="https://fonts.googleapis.com/css?family=Manjari:400,700|Montserrat|Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Manjari:400,700%7CMontserrat%7COpen+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<main class="text-center" id="main">
+	<main id="main">
 		<div id="top">
 			<h1 id="hp-title">Devenez charismatique : The process</h1>
 			<p id="sub_title">La génétique parfaite : c'est aussi dans la tête.</p>
 		</div>
 		<header id="header">
 			<nav id="navbar">
-				<div id="bloc-citation" class="mr-auto p-4"><p id="text-citation">
+				<div id="bloc-citation"><p id="text-citation">
 				“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète</p>
 			</div>
-			<a href="index.html"><div class="p-4 nav-menu">Homepage</div></a>
-			<a href="#"><div class="p-4 nav-menu">Article</div></a>
-			<a href="#"><div class="p-4 nav-menu">Formation</div></a>
-			<a href="contact.html"><div class="p-4 nav-menu">Contact</div></a>
+			<a href="index.html"><div class=" nav-menu">Homepage</div></a>
+			<a href="#"><div class="nav-menu">Article</div></a>
+			<a href="#"><div class="nav-menu">Formation</div></a>
+			<a href="contact.html"><div class="nav-menu">Contact</div></a>
 		</nav>
 	</header>
 	<div id="map"></div>
@@ -34,7 +35,7 @@ function initMap() {
   var maison = {lat: 48.9, lng: 2.3333};
   // The map, centered at Uluru
   var maison = new google.maps.Map(
-  	document.getElementById('map'), {zoom: 4, center: maison});
+  	document.getElementById('map'), {zoom: 15, center: maison});
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: maison, map: map});
 }
@@ -44,14 +45,36 @@ src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyBJcJbxRZEWot7ymQBMxotey3Mo3j2O7As
 &callback=initMap">
 </script>
-
+<div id="background-main-img">
 <div id="main-page" class="container">
-	<h3>Contact</h3>
-	<p>Une question ? un problème ?<br>
-	n'hésitez pas à me contacter pour que nous puissions travailler ensemble</p>
-	<form>
-		
+	<div id="top-main-page">
+		<h3>Contact</h3>
+		<p>Une question ? un problème ?<br>
+	n'hésitez pas à nous contacter pour que nous puissions faire le point ensemble.</p>
+	</div>
+	<form id="formulaire-contact">
+		<div class="form">
+			<label class="mid-form" for="email">Votre addresse mail</label>
+			<input type="email" class="form-control" id="input-email" placeholder="Entrez votre email" />
+			<small id="email-info" class="form-text">Votre e-mail est chiffré dans notre base de donnée*</small>
+		</div>
+		<div class="form row">
+			<div class="col-lg-5 col-md-5 col-sm-12" id="bloc-form-left">
+				<label id="left-form" for="lastname">Votre nom</label>
+				<input class="form-control" id="input-lastname" type="text" name="surname" placeholder="Entrez votre nom" />
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-12" id="bloc-form-right">
+				<label id="right-form" for="surname">Votre Prénom</label>
+				<input class="form-control" id="input-firstname" type="text" name="surname" placeholder="Entrez votre prénom" />
+			</div>
+		</div>
+		<div class="form-group" id="bloc-form-subject">
+			<label class="mid-form" for="lastname">Sujet de votre demande</label>
+			<input class="form-control" id="input-form-subject" type="text" name="surname" placeholder="Entrez votre nom" />
+		</div>
+		<button value="radio" />
 	</form>
+</div>
 </div>
 </main>
 </body>
