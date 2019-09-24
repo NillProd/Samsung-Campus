@@ -14,7 +14,6 @@ bleu ciel gris :	#6b818c;
 noir verdatre:		#1f2421;
 */
 
-
 html, body{
 	margin: 0;
 	background-color: #f7ece1;
@@ -87,9 +86,8 @@ a:hover{
 
 /* header - navbar */
 
-/* background-image + fond transparent & responsive */
-#background-img{
-	background-image: url('../img/boxing.jpg');
+/* background-image & vidéo */
+.background-img{
 	background-repeat: repeat-x;
 	background-position: right;
 	display: flex;
@@ -98,6 +96,9 @@ a:hover{
 	color: white;
 	max-width: 100%; 
 	margin: 0;
+}
+#hp-section-1{
+	background-image: url('../img/boxing.jpg');
 }
 #img-hp{
 	width: 100px;
@@ -110,54 +111,92 @@ a:hover{
   text-align: center;
 }
 #title-h1{
-	font-size: 2.8em;
+	font-size: 2.6em;
+	padding-top: 15px;
 }
 #sub-h1-p{
-	max-width: 80%;
+	max-width: 90%;
 	margin: auto;
 	font-size: 1em;
 }
 #main-page-bloc-citation{
 	height: 65px;
 }
-#main-page-text-citation{
+#br-responsive{
 	display: none;
-	padding: 0 10px 0 10px; 
+}
+#showVideo{
+	display: none;
+	max-height: 400px;
+}
+#video{
+	margin: auto;
+}
+#button-video{
+	display: none;
+	position: absolute;
+	right: 0;
+	height: 20px;
+	width: 20px;
+	padding: 1px;
+	color: white;
+}
+#span-video:hover{
+	font-weight: bold;
+}
+#hp-section-3{
+	background-image: url('../img/girl.jpg');
+}
+#hp-section-2{
+	min-height: 400px;
+}
+.profil-picture{
+	background-color: red;
+	border-radius: 10%;
+	height: 150px;
+	width: 125px;
+	margin: auto;
+	margin-top: 125px;
+	border: 2px solid #fff000;
 }
 @media screen and (max-width: 1220px)
 {
 	/*TOP HEADER*/
 	#title-h1{
-		font-size: 2.3em;
+		font-size: 2.2em;
 		padding-top: 20px;
 	}
 	#sub-h1-p{
 		max-width: 90%;
 		font-size: 0.9em;
 	}/*	* * * * FIN TOP HEADER*/
-	#navbar{
-		align-items: space-between;
-	}
 	#text-citation{
-		display: none;
+		padding: 0.85rem;
 	}
-	#menu-auto-width{
-		
-	}
-	#main-page-text-citation{
+	#br-responsive{
 		display: block;
-		float: left;
+	}
+	#hp-section-3{
+		background-position: left 65% top 50%;
 	}
 }
-@media screen and (max-width: 992px)
+@media screen and (max-width: 992px) /* COL-MD */
 {
 	#title-h1{
 		font-size: 1.6em;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 	#sub-h1-p{
 		font-size: 0.8em;
 		line-height: 1.6em;
+	}
+	.profil-picture{
+		margin-top: 33px;
+	}
+}
+@media screen and (max-width: 900px){
+	#text-citation{
+		display: none;
 	}
 }
 @media screen and (max-width: 575px){
@@ -174,8 +213,11 @@ a:hover{
 	#bloc-citation{
 		display: none;
 	}
-	#background-img{
+	#hp-section-1{
 		background-position: right 15% top 0%;
+	}
+	#second-image{
+
 	}
 	#title-h1{
 		padding-top: 30px;
@@ -195,10 +237,9 @@ a:hover{
 /* MAIN-PAGE END */
 
 
-/*		||_**_CONTACT_**_||		*/
-
+/*	^^	||_**_CONTACT_PAGE_**_||	^^	*/
 #background-main-img{
-	background-image: url('../img/background-repeat.jpg');
+	background-image: url('../img/texture-formation.jpg');
 }
 #map{
 	height: 400px;
@@ -207,71 +248,46 @@ a:hover{
 }
 #main-page{
 	padding-top: 35px;
+	padding-bottom: 35px;
 }
-#top-main-page{
-	padding: 10px;
-	background-color: white;
-	text-align: center;
-}
-.form{
-	max-width: 80%;
+#bloc-contact-top{
+	max-width: 650px;
+	height: 150px;
 	margin: auto;
+	margin-bottom: 30px;
+	padding: 25px 15px 25px 15px;
+	text-align: center;
+	background-color: white;
+}
+#formulaire{
+	max-width: 500px;
+	margin: auto;
+}
+.checkbox-style{
+	border-radius: 80%;
+}
+/**	*	* FORMULAIRE DE CONTACT	*	*	*/
+#radio-input-margin{
+	margin-right: 30px;
+}
+label{
+	font-family: 'Manjari', sans-serif;
+}
+.form-section{
 	margin-bottom: 20px;
 }
+.align-label{
+	margin-left: 25px;
+}
 #email-info{
-	margin-top: 8px;
-	text-align: center;
+	margin-left: 65px;
 }
-#left-form{
-	float: left;
+@media screen and (max-width: 500px){
+	.form-control{
+		width: 90%;
+		margin: auto;
+	}
 }
-#right-form{
-	float: right;
+/**	*	* FORMULAIRE DE CONTACT	*	*	*/
 
-}
-#formulaire-contact{
-	margin: 10px 0;
-}
-#email-info{
-	color: black;
-}
-#bloc-form-left{
-	padding: 0;
-	margin-right: auto;
-}
-#bloc-form-right{
-	padding: 0;
-	margin-left: auto;
-}
-.form-control{
-	margin: auto;
-	width: 85%;
-}
-.mid-form{
-	left: 20%;
-}
-@media screen and (max-width: 991px){
-	.form-control{
-		background-color: yellow;
-	}
-}
-@media screen and (max-width: 767px){
-	.form-control{
-		background-color: red;
-	}
-	#bloc-form-left{
-		margin-bottom: 20px;
-	}
-	#bloc-form-right{
-		margin-bottom: 20px;
-	}
-	#left-form{
-		float: none;
-		margin: 0 0 .5rem 0;
-	}
-	#right-form{
-		float: none;
-		margin: 0 0 .5rem 0;
-	}
-}
-/*		||_**_CONTACT_**_||		*/
+/*	^^	||_**_CONTACT_PAGE_**_||	^^	*/

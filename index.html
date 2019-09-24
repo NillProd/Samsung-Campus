@@ -9,17 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
 	<link href="https://fonts.googleapis.com/css?family=Manjari:400,700%7CMontserrat%7COpen+Sans&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/af7a12231f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<main id="main">
 		<div id="top">
-			<h1 id="hp-title">Devenez charismatique : The process</h1>
-			<p id="sub_title">La génétique parfaite : c'est aussi dans la tête.</p>
+			<h1 id="hp-title">Warrior Mind7 : adapté à tout le monde</h1>
+			<p id="sub_title">Coaching de vie : c'est pour la vie</p>
 		</div>
 		<header id="header">
 			<nav id="navbar">
-				<div id="bloc-citation"><p id="text-citation">
-				“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète</p>
+			<div id="bloc-citation">
+				<p id="text-citation">
+					“Il ne faut pas lier un navire à une seule ancre,<br id="br-responsive"> ni une vie à un seul espoir” - Epictète
+				</p>
 			</div>
 			<a href="index.html"><div class="nav-menu">Homepage</div></a>
 			<a href="#"><div class="nav-menu">Article</div></a>
@@ -27,21 +30,77 @@
 			<a href="contact.html"><div class="nav-menu">Contact</div></a>
 		</nav>
 	</header>
-	<div id="background-img" class="row">
-		<div id="background-color-text" class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mx-auto">			  	<h2 id="title-h1">Développez votre vision et prenez une décision</h2>
+	<div class="background-img" id="hp-section-1" class="row">
+		<div id="background-color-text" class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mx-auto">
+			<!--<h2 id="title-h1">Développez votre vision et prenez une décision</h2>-->
+			<h2 id="title-h1">Un programme créer par des professionnels</h2>
 			<p id="sub-h1-p">
-				Petit, grand, musclé, maigre, moche, beau... dans la forme c'est important mais le plus important c'est ce qu'il se passe dans votre tête.<br>Scepticisme, peur et envie : développez l'état d'esprit et l'aptitude de vos envies <a href="_blank">explication</a>
+				Ce programme est le fruit du travail acharnés de 4 personnes qualifés et reconnus dans le domaine : sociologue, coach de vie, sportif de haut niveau, nutritioniste... il été conçu pour résoudre des problèmatiques que l'on rencontre tous.<br><span id="span-video" onclick="showVideo()">explication <i class="fa fa-video"></i></span>
 			</p>
 		</div>
 	</div>
-	<div id="main-page-bloc-citation" class="p-2">
-		<p id="main-page-text-citation">
-			“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète
-		</p>
+	<div id="showVideo" style="background-color: black;">
+		<button type="button" class="close" aria-label="Close" id="button-video" onclick="buttonVideo()">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<video id="video" width="100%" height="400px" loop>
+			<source src="media/video.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="container-fluid" id="hp-section-2">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="profil-picture">
+					<img src="#" alt="image de "/>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="profil-picture">
+					<img src="#" alt="image de "/>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="profil-picture">
+					<img src="#" alt="image de "/>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="profil-picture">
+					<img src="#" alt="image de "/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="background-img" id="hp-section-3" class="row">
+		<div id="background-color-text" class="col-lg-6 col-md-6 col-sm-8 col-xs-12 mx-auto">
+			<h2 id="title-h1">Développez votre vision et prenez une décision</h2>
+			<p id="sub-h1-p">
+				Petit, grand, musclé, maigre, moche, beau... dans la forme c'est important mais le plus important c'est ce qu'il se passe dans votre tête.<br>Scepticisme, peur et envie : développez l'état d'esprit et l'aptitude de vos envies <div href="_blank">explication <i class="fas fa-video"></i></a>
+			</p>
+		</div>
 	</div>
 	<div id="main-page" class="container">
 
 	</div>
 </main>
+<script>
+	var vid = document.getElementById("video");
+
+	function showVideo(){
+		vid.play();
+		document.getElementById('showVideo').style.display = "flex";
+		document.getElementById('hp-section-1').style.display = "none";
+		document.getElementById('button-video').style.display = "flex";
+	}
+
+	function buttonVideo(){
+		vid.pause();
+		document.getElementById('showVideo').style.display = "none";
+		document.getElementById('hp-section-1').style.display = "flex";
+		document.getElementById('button-video').style.display = "none";	
+	}
+	
+</script>
 </body>
 </html>

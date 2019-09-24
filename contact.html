@@ -28,7 +28,52 @@
 		</nav>
 	</header>
 	<div id="map"></div>
-	<script>
+<div id="background-main-img">
+<div id="main-page">
+	<div id="bloc-contact-top">
+		<h3>Page Contact</h3>
+		<p>Une question ? un problème ?<br>
+	n'hésitez pas à nous contacter pour que nous puissions faire le point ensemble.</p>
+	</div>
+	<form id="formulaire">
+		<div class="form-section">
+			<label class="align-label">Je suis :</label><br>
+			<input type="radio" name="categories" value="particulier" required>
+			<label>un particulier</label>
+			<input type="radio" name="categories" value="entreprise" style="margin-left: 20px;">
+			<label>un professionnel</label>
+		</div>
+		<div class="form-section">
+			<label class="align-label" for="email">Votre addresse mail</label>
+			<input class="form-control" id="intput-email" type="email"  placeholder="Entrez votre email" minlenght="6" maxlenght="254" required>
+			<small id="email-info">Votre e-mail est chiffré dans notre base de donnée*</small>
+		</div>
+		<div class="form-section">
+			<label class="align-label" for="lastname" autocapitalize="characters" >Votre nom</label>
+			<input class="form-control" id="input-lastname" type="text" name="surname" placeholder="Entrez votre nom" minlenght="3" maxlenght="64" autocapitalize="word" required>
+		</div>
+		<div class="form-section">
+			<label class="align-label" for="firstname">Votre Prénom</label>
+			<input class="form-control" id="input-firstname" type="text" name="firstname" placeholder="Entrez votre prénom" minlenght="3" maxlenght="64" required>
+		</div>
+		<div class="form-section">
+			<label class="align-label" for="lastname">Sujet</label>
+			<textarea class="form-control" id="input-form-subject" type="text" name="surname" placeholder="Votre message" rows="5" required></textarea>
+		</div>
+		<div>
+			<input class="checkbox-style" type="checkbox">
+			<label>Je souhaite que vous me recontactiez dès que possible.</label>
+		</div>
+		<div>
+			<input class="checkbox-style" type="checkbox">
+			<label>Je ne souhaite pas recevoir d'email promotionel</label>
+		</div>
+		<button>envoyé</button>
+	</form>
+</div>
+</div>
+</main>
+<script>
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
@@ -45,37 +90,5 @@ src="https://maps.googleapis.com/maps/api/js?key=
 AIzaSyBJcJbxRZEWot7ymQBMxotey3Mo3j2O7As
 &callback=initMap">
 </script>
-<div id="background-main-img">
-<div id="main-page" class="container">
-	<div id="top-main-page">
-		<h3>Contact</h3>
-		<p>Une question ? un problème ?<br>
-	n'hésitez pas à nous contacter pour que nous puissions faire le point ensemble.</p>
-	</div>
-	<form id="formulaire-contact">
-		<div class="form">
-			<label class="mid-form" for="email">Votre addresse mail</label>
-			<input type="email" class="form-control" id="input-email" placeholder="Entrez votre email" />
-			<small id="email-info" class="form-text">Votre e-mail est chiffré dans notre base de donnée*</small>
-		</div>
-		<div class="form row">
-			<div class="col-lg-5 col-md-5 col-sm-12" id="bloc-form-left">
-				<label id="left-form" for="lastname">Votre nom</label>
-				<input class="form-control" id="input-lastname" type="text" name="surname" placeholder="Entrez votre nom" />
-			</div>
-			<div class="col-lg-5 col-md-5 col-sm-12" id="bloc-form-right">
-				<label id="right-form" for="surname">Votre Prénom</label>
-				<input class="form-control" id="input-firstname" type="text" name="surname" placeholder="Entrez votre prénom" />
-			</div>
-		</div>
-		<div class="form-group" id="bloc-form-subject">
-			<label class="mid-form" for="lastname">Sujet de votre demande</label>
-			<input class="form-control" id="input-form-subject" type="text" name="surname" placeholder="Entrez votre nom" />
-		</div>
-		<button value="radio" />
-	</form>
-</div>
-</div>
-</main>
 </body>
 </html>
