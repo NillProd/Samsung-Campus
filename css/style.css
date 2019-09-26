@@ -16,18 +16,20 @@ noir verdatre:		#1f2421;
 
 html, body{
 	margin: 0;
-	background-color: #f7ece1;
+	background-color: #070707;
 	font-size: 16px;
 	font-family: 'Montserrat','Manjari', sans-serif;
 }
-
+abbr{
+	text-decoration: none !important;
+}
 /*TOP title*/
 #top{
 	margin: 0;
-	padding: 16px;
+	padding: 5px;
 	color: #1f2421;
 	background-color: #6b818c;
-	border: solid 7px #1f2421;
+	border: solid 5px #1f2421;
 	text-align: center;
 }
 #hp-title{
@@ -53,6 +55,7 @@ html, body{
 }
 #text-citation{
 	padding: 1.5rem;
+	color: darkgrey;
 }
 #navbar{
 	display: flex;
@@ -87,7 +90,8 @@ a:hover{
 /* header - navbar */
 
 /* background-image & vidéo */
-.background-img{
+#hp-section-1{
+	background-image: url('../img/boxing.jpg');
 	background-repeat: repeat-x;
 	background-position: right;
 	display: flex;
@@ -96,21 +100,22 @@ a:hover{
 	color: white;
 	max-width: 100%; 
 	margin: 0;
-}
-#hp-section-1{
-	background-image: url('../img/boxing.jpg');
+	border-bottom: 1px solid darkgrey;
+	border-top: 1px solid darkgrey;
+
 }
 #img-hp{
 	width: 100px;
 	height: auto;
 }
 #background-color-text{
-  background-color: rgba(85, 85, 85, .75);
-  padding: 10px 20px 10px 20px;
-  height: 260px;
-  text-align: center;
+	padding: 10px 20px 10px 20px;
+	height: 260px;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(85, 85, 85, .75);
 }
-#title-h1{
+#background-title{
 	font-size: 2.6em;
 	padding-top: 15px;
 }
@@ -121,9 +126,6 @@ a:hover{
 }
 #main-page-bloc-citation{
 	height: 65px;
-}
-#br-responsive{
-	display: none;
 }
 #showVideo{
 	display: none;
@@ -143,28 +145,70 @@ a:hover{
 }
 #span-video:hover{
 	font-weight: bold;
-}
-#hp-section-3{
-	background-image: url('../img/girl.jpg');
+	cursor: pointer;
 }
 #hp-section-2{
-	min-height: 400px;
-}
-.profil-picture{
-	background-color: red;
-	border-radius: 10%;
-	height: 150px;
-	width: 125px;
+	background-image: url("../img/background-5.jpg");
+	background-repeat: repeat-x;
+	background-position: right;
+  	height: 600px;
 	margin: auto;
-	margin-top: 125px;
-	border: 2px solid #fff000;
+	background-size: cover;
+	width: 100%;
+}
+#logo-opk{
+	display: block;
+	bottom: 16px;
+	position: relative;
+	margin: auto;
+}
+.fighters-profile{
+	margin: auto;
+	width: auto;
+	height: 690px;
+}
+#picture-mac-gregor{
+	float: right;
+}
+#picture-jon-jones{
+	float: left;
+}
+#vertical-line{
+	width: 3px;
+	height: 500px;
+	position: absolute;
+	background-color: #95FF5F;
+	left: 185px;
+}
+/*
+#hp-section-2-title{
+	width: 250px;
+	position: relative;
+	right: 25px;
+}*/
+.align-li{
+	margin-bottom: 10px;
+}
+/*
+#hp-section-3{
+	background-color: #0000ff;
+	max-height: 400px;
+	border-top: 15px solid yellow;
+	position: relative;
+}*/
+#hp-section-4{
+	background-color: red;
+	height: 250px;
+}
+li .tab-fighters{
+	background-color: white;
 }
 @media screen and (max-width: 1220px)
 {
 	/*TOP HEADER*/
-	#title-h1{
+	#background-title{
 		font-size: 2.2em;
-		padding-top: 20px;
+		padding-top: 15px;
 	}
 	#sub-h1-p{
 		max-width: 90%;
@@ -173,30 +217,36 @@ a:hover{
 	#text-citation{
 		padding: 0.85rem;
 	}
-	#br-responsive{
-		display: block;
-	}
 	#hp-section-3{
 		background-position: left 65% top 50%;
+	}
+	#vertical-line{
+		left: 155px;
+	}
+	#mac-vs-jon{
+		position: relative;
+		right: 30px;
 	}
 }
 @media screen and (max-width: 992px) /* COL-MD */
 {
-	#title-h1{
-		font-size: 1.6em;
+	#background-title{
+		font-size: 1.7em;
 		padding-bottom: 10px;
 	}
-	#sub-h1-p{
-		font-size: 0.8em;
-		line-height: 1.6em;
+	#vertical-line{
+		left: 115px;
 	}
-	.profil-picture{
-		margin-top: 33px;
+	#mac-vs-jon{
+		right: 70px;
 	}
 }
 @media screen and (max-width: 900px){
 	#text-citation{
 		display: none;
+	}
+	#background-title{
+		font-size: 1.61em;
 	}
 }
 @media screen and (max-width: 575px){
@@ -216,18 +266,22 @@ a:hover{
 	#hp-section-1{
 		background-position: right 15% top 0%;
 	}
-	#second-image{
-
-	}
-	#title-h1{
-		padding-top: 30px;
+	#background-title{
+		font-size: 1.5em;
+		padding-bottom: 10px;
 	}
 }
 
-@media screen and (max-width: 460px)
+@media screen and (max-width: 360px)
 {
-	#title-h1{
-		padding-top: 5px;
+	#background-title{
+		font-size: 1.35em;
+		padding-top: 7px;
+		padding-bottom: 3px;
+	}
+	#sub-h1-p{
+		font-size: 0.8em;
+		line-height: 1.4em;
 	}
 }
 /* Background-image + fond transparent & reponsive */
@@ -238,17 +292,13 @@ a:hover{
 
 
 /*	^^	||_**_CONTACT_PAGE_**_||	^^	*/
-#background-main-img{
-	background-image: url('../img/texture-formation.jpg');
-}
 #map{
-	height: 400px;
+	height: 100%;
 	width: 100%;
 	background-color: white;
 }
-#main-page{
-	padding-top: 35px;
-	padding-bottom: 35px;
+#contact-page{
+	background-image: ;
 }
 #bloc-contact-top{
 	max-width: 650px;
