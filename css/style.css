@@ -4,340 +4,373 @@
 	src: url('../font/Montserrat/Montserrat-regulier.ttf');
 }
 */
-
-/* ATELIER COULEUR :
-rose barbapapa :	#f9e7e7;
-orange : 			#d36135;
-vert lime :			#7fb069;
-bleu nuit :			#13262f;
-bleu ciel gris :	#6b818c;
-noir verdatre:		#1f2421;
-*/
-
 html, body{
-	margin: 0;
-	background-color: #070707;
-	font-size: 16px;
-	font-family: 'Montserrat','Manjari', sans-serif;
+	margin: 			0;
+	background-color: 	#070707;
+	font-size: 			16px;
+	font-family: 		'Montserrat','Manjari', sans-serif;
 }
 abbr{
-	text-decoration: none !important;
-}
-/*TOP title*/
-#top{
-	margin: 0;
-	padding: 5px;
-	color: #1f2421;
-	background-color: #6b818c;
-	border: solid 5px #1f2421;
-	text-align: center;
-}
-#hp-title{
-	margin: 0;
-	padding: 15px 0;
-	font-family:'Montserrat', 'Manjari', sans-serif;
-	font-size: 2.4em;
-}
-#sub_title{
-	font-family: 'Montserrat','Manjari', sans-serif;
-	font-size: 1em;
-}
-/*TOP title*/
-
-/* header - navbar */
-#header{
-	height: 75px;
-	margin: 0;
-	padding: 0;
-}
-#bloc-citation{
-	margin-right: auto;
-}
-#text-citation{
-	padding: 1.5rem;
-	color: darkgrey;
-}
-#navbar{
-	display: flex;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-.nav-menu{
-	padding: 1.5rem;
-	height: 100%;
-	border-top: 0;
-	border-bottom: 0;
-	border-left: 1px solid #1f2421;
-	text-align: center;
-	background-color: #6b818c;
-	color: white;
-}
-.nav-menu:hover{
-	background-color: ;
-	color: #1f2421;
+	text-decoration: 	none !important;
 }
 a:hover{
-	text-decoration: none;
+	text-decoration: 	none;
 }
+ul{
+	list-style: 		none;
+	padding:			0;
+}
+.text-white{
+	color: 				white;
+}
+.text-green{
+	color: 				#95FF5F;
+}
+.display-responsive{
+	display:			none;
+}
+/*   *   *   *   *   TOP PAGE   *   *   *   */
+#top-bloc{
+	padding-top: 		20px;
+	height:				140px;
+	color: 				#1f2421;
+	background-color: 	#6b818c;
+	border: 			solid 5px #1f2421;
+	text-align: 		center;
+}
+#top-title{
+	font-family:		'Montserrat', 'Manjari', sans-serif;
+	font-size: 			2.4em;
+}
+#top-sub-title{
+	font-family: 		'Montserrat','Manjari', sans-serif;
+	font-size: 			1em;
+}
+/*   *   *   *   *   TOP PAGE   *   *   *   */
+/*   END */
 
-#logo{
-	width: 65px;
-	height: 65px;
-	margin: auto;
-}
 
-/* header - navbar */
 
-/* background-image & vidéo */
-#hp-section-1{
-	background-image: url('../img/boxing.jpg');
-	background-repeat: repeat-x;
-	background-position: right;
-	display: flex;
-  	align-items: center;
-	height: 400px;
-	color: white;
-	max-width: 100%; 
-	margin: 0;
-	border-bottom: 1px solid darkgrey;
-	border-top: 1px solid darkgrey;
+/*   *   *   *   *   NAVBAR   *   *   *   */
+#header{
+	height: 			75px;
+}
+#bloc-citation{
+	margin-right: 		auto;
+	background-image: 	url("../img/paper.jpg");
+	background-repeat: 	repeat-x;
+	width: 				100%;
+	color:				black;
+}
+#text-citation{
+	padding: 			25px;
+}
+#navbar{
+	display: 			flex;
+	height: 			100%;
+}
+.nav-menu{
+	padding: 			1.5rem;
+	height: 			100%;
+	border-left: 		1px solid #1f2421;
+	text-align: 		center;
+	background-color: 	#6b818c;
+	color: 				white;
+}
+.nav-menu:hover{
+	color: 				#1f2421;
+}
+/*   *   *   *   *   NAVBAR   *   *   *   */
+/*   END */
 
+
+
+/*   *   *   *   *   SECTION-1   *   *   *   */
+#section-1{
+	background-image: 	url('../img/boxing.jpg');
+	background-position:right;
+	height: 			400px;
+	border-bottom: 		1px solid darkgrey;
+	border-top: 		1px solid darkgrey;
+	color: 				white;
+	margin:				0;
 }
-#img-hp{
-	width: 100px;
-	height: auto;
+#s1-bloc{
+	padding:			15px 20px 10px 20px;
+	height:				260px;
+	margin:				auto;
+	text-align:			center;
+	background-color: 	rgba(85, 85, 85, .75);
 }
-#background-color-text{
-	padding: 10px 20px 10px 20px;
-	height: 260px;
-	margin: auto;
-	text-align: center;
-	background-color: rgba(85, 85, 85, .75);
+#s1-title{
+	font-size: 			2.6em;
 }
-#background-title{
-	font-size: 2.6em;
-	padding-top: 15px;
+#s1-paragraphe{
+	max-width: 			90%;
+	margin: 			auto;
+	font-size: 			1em;
 }
-#sub-h1-p{
-	max-width: 90%;
-	margin: auto;
-	font-size: 1em;
-}
-#main-page-bloc-citation{
-	height: 65px;
-}
+		/*   VIDEO-STYLE   */
 #showVideo{
-	display: none;
-	max-height: 400px;
-}
-#video{
-	margin: auto;
+	display: 			none;
 }
 #button-video{
-	display: none;
-	position: absolute;
-	right: 0;
-	height: 20px;
-	width: 20px;
-	padding: 1px;
-	color: white;
+	display: 			none;
+	position: 			absolute;
+	right: 				0;
+	height: 			20px;
+	width: 				20px;
+	color: 				white;
 }
 #span-video:hover{
-	font-weight: bold;
-	cursor: pointer;
+	font-weight: 		bold;
+	cursor: 			pointer;
 }
-#hp-section-2{
-	background-image: url("../img/background-5.jpg");
-	background-repeat: repeat-x;
-	background-position: right;
-  	height: 600px;
-	margin: auto;
-	background-size: cover;
-	width: 100%;
+		/*   FIN-VIDEO-STYLE   */
+/*   *   *   *   *   SECTION-1   *   *   *   */
+/*   END */
+
+
+
+/*   *   *   *   *   SECTION-2   *   *   *   */
+#section-2{
+	background-image: 	url("../img/background-5.jpg");
+	background-repeat: 	repeat-x;
+	background-position:right;
+  	height: 			600px;
+	margin: 			auto;
+	background-size: 	cover;
+	width: 				100%;
 }
 #logo-opk{
-	display: block;
-	bottom: 16px;
-	position: relative;
-	margin: auto;
+	display: 			block;
+	bottom: 			16px;
+	position:			relative;
+	margin: 			auto;
 }
-.fighters-profile{
-	margin: auto;
-	width: auto;
-	height: 690px;
+.fighters-img{
+	width: 				auto;
+	height: 			690px;
 }
-#picture-mac-gregor{
-	float: right;
+#mac-gregor{
+	float: 				right;
 }
-#picture-jon-jones{
-	float: left;
+#jon-jones{
+	float: 				left;
 }
-#vertical-line{
-	width: 3px;
-	height: 500px;
-	position: absolute;
-	background-color: #95FF5F;
-	left: 185px;
+#col-mac-vs-jon{
+	display: 			flex;
+	align-items: 		center;
+	justify-content: 	center;
 }
-/*
-#hp-section-2-title{
-	width: 250px;
-	position: relative;
-	right: 25px;
-}*/
-.align-li{
-	margin-bottom: 10px;
+#mac-vs-jon{
+	margin-bottom: 		25px;
 }
-/*
-#hp-section-3{
-	background-color: #0000ff;
-	max-height: 400px;
-	border-top: 15px solid yellow;
-	position: relative;
-}*/
-#hp-section-4{
-	background-color: red;
-	height: 250px;
+.s2-ul-xs{						/*TAB*/
+		display: 		flex;
+		justify-content:
+						space-around;
+		margin: auto;
 }
-li .tab-fighters{
-	background-color: white;
+.li-align{
+	width: 				85px;
+	margin-bottom: 		30px;
 }
+.li-align-right{
+	text-align: 		right;
+}
+.li-align-center{
+	text-align: 		center;
+	color: 				black;
+	background-color: 	#95FF5F;
+}
+
+
 @media screen and (max-width: 1220px)
 {
-	/*TOP HEADER*/
-	#background-title{
-		font-size: 2.2em;
-		padding-top: 15px;
+	#s1-title{		/*SECTION-1*/
+		font-size:		2.2em;
+		padding-top:	15px;
 	}
-	#sub-h1-p{
-		max-width: 90%;
-		font-size: 0.9em;
-	}/*	* * * * FIN TOP HEADER*/
-	#text-citation{
-		padding: 0.85rem;
-	}
-	#hp-section-3{
-		background-position: left 65% top 50%;
-	}
-	#vertical-line{
-		left: 155px;
-	}
-	#mac-vs-jon{
-		position: relative;
-		right: 30px;
-	}
+	#s1-paragraphe{
+		font-size:		0.9em;
+	}				/*SECTION-1*/
+
+
+	#text-citation{		/*NAVBAR*/
+		padding:		0.85rem;
+	}					/*NAVBAR*/
 }
-@media screen and (max-width: 992px) /* COL-MD */
+
+
+@media screen and (max-width: 992px)	/*COL-MD*/
 {
-	#background-title{
-		font-size: 1.7em;
+	#s1-title{
+		font-size: 		1.6em;
 		padding-bottom: 10px;
 	}
-	#vertical-line{
-		left: 115px;
+}										/*COL-MD-FIN*/
+
+
+@media screen and (max-width: 900px)
+{
+	#text-citation{
+		display: 		none;
+	}
+}
+
+
+@media screen and (max-width: 767px)	/*	*	*	COL-SM	*	*	*/
+{
+	.display-responsive{
+		display: 		block;
+	}
+	#logo-opk{
+		display: 		none;
+	}
+	#jon-jones{
+		display: 		none;
 	}
 	#mac-vs-jon{
-		right: 70px;
+		display:		none;
 	}
-}
-@media screen and (max-width: 900px){
-	#text-citation{
-		display: none;
+
+
+	#top-title{						/*TOP*/
+		font-size: 		2em;
 	}
-	#background-title{
-		font-size: 1.61em;
+	#top-sub-title{
+		font-size: 		0.9em;
+	}								/*TOP*/
+
+
+	#s2-responsive-background{		/*section-2*/
+		margin: 		0;
+		min-width: 		100%;
+		padding: 		0;
 	}
-}
-@media screen and (max-width: 575px){
-	#header{
-		height: auto;
+	#section-2{
+		height: 		400px;
+	}
+	.fighters-img{
+		height: 		390px;
+		margin-top: 	10px;
+	}
+	#mac-gregor{
+		float: 			left;
+	}
+	#jon-jones-responsive{
+		float:			right;
+	}
+	#logo-opk-responsive{
+		left: 			50%;
+		transform: 		translate(-50%,0);
+		position: 		absolute;
+		z-index: 		1;
+	}								/*section-2*/
+
+
+	.s2-ul-xs{						/*TAB*/
+		width: 			33.33333%;
+		width:			calc(100%  /3);
+		margin-top: 	50px;
+	}								/*TAB*/
+}		/*FIN*	*	COL-SM	*	*FIN*/
+
+
+@media screen and (max-width: 575px)	/*	*	*	COL-XS	*	*	*/
+{
+	#header{						/*NAVBAR*/
+		height: 		auto;
 	}
 	#navbar{
 		flex-direction: column;
 	}
 	.nav-menu{
-		border-left: 0;
-		border-top: 1px solid #1f2421;
+		border-left: 	0;
+		border-top: 	1px solid #1f2421;
+	}								/*NAVBAR*/
+
+
+	#section-1{
+		background-position:
+						right 15% top 0%;
 	}
-	#bloc-citation{
-		display: none;
-	}
-	#hp-section-1{
-		background-position: right 15% top 0%;
-	}
-	#background-title{
-		font-size: 1.5em;
+	#s1-title{
+		font-size: 		1.5em;
 		padding-bottom: 10px;
+	}
+}
+@media screen and (max-width: 442px){
+	.fighters-img{
+		height: 		280px;
+		margin-top: 	120px;
 	}
 }
 
 @media screen and (max-width: 360px)
 {
-	#background-title{
-		font-size: 1.35em;
-		padding-top: 7px;
+	#s1-title{
+		font-size: 		1.35em;
+		padding-top: 	7px;
 		padding-bottom: 3px;
 	}
 	#sub-h1-p{
-		font-size: 0.8em;
-		line-height: 1.4em;
+		font-size: 		0.8em;
+		line-height: 	1.4em;
 	}
+}										/*FIN*	*	COL-XS	*	*FIN*/
+
+
+
+	/*PAGE*		*   *   *   *   *   *	*PAGE*/
+	/*PAGE*		*		CONTACT		*	*PAGE*/
+	/*PAGE*		*   *   *   *   *   *	*PAGE*/
+#bloc-contact-page{
+	padding: 0;
 }
-/* Background-image + fond transparent & reponsive */
-
-/* MAIN-PAGE */
-
-/* MAIN-PAGE END */
-
-
-/*	^^	||_**_CONTACT_PAGE_**_||	^^	*/
 #map{
-	height: 100%;
-	width: 100%;
-	background-color: white;
+	height: 			100%;
+	width: 				100%;
+	background-color: 	white;
 }
 #contact-page{
-	background-image: ;
+	background-image: white;
 }
 #bloc-contact-top{
-	max-width: 650px;
-	height: 150px;
-	margin: auto;
-	margin-bottom: 30px;
-	padding: 25px 15px 25px 15px;
-	text-align: center;
-	background-color: white;
+	max-width: 			650px;
+	height: 			150px;
+	margin: 			auto;
+	margin-bottom: 		30px;
+	padding: 			25px 15px 25px 15px;
+	text-align: 		center;
+	background-color:	white;
 }
 #formulaire{
-	max-width: 500px;
-	margin: auto;
+	max-width:			500px;
+	margin:				auto;
 }
 .checkbox-style{
-	border-radius: 80%;
+	border-radius:		80%;
 }
+
 /**	*	* FORMULAIRE DE CONTACT	*	*	*/
 #radio-input-margin{
-	margin-right: 30px;
+	margin-right: 		30px;
 }
 label{
-	font-family: 'Manjari', sans-serif;
+	font-family: 		'Manjari', sans-serif;
 }
 .form-section{
-	margin-bottom: 20px;
+	margin-bottom:		20px;
 }
 .align-label{
-	margin-left: 25px;
+	margin-left:		25px;
 }
 #email-info{
-	margin-left: 65px;
+	margin-left:		65px;
 }
-@media screen and (max-width: 500px){
-	.form-control{
-		width: 90%;
-		margin: auto;
-	}
-}
-/**	*	* FORMULAIRE DE CONTACT	*	*	*/
 
-/*	^^	||_**_CONTACT_PAGE_**_||	^^	*/
+	/*FIN *		*   *   *   *   *   *	*FIN */
+	/*PAGE*		*		CONTACT		*	*PAGE*/
+	/*FIN *		*   *   *   *   *   *	*FIN */

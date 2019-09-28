@@ -1,100 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<link rel="canonical" href="index.html" /> <!-- balise canonical : évite les doublons dans le moteur de recherche -->
-	<meta name="robots" content="none,noodp,noydir"> <!--Bloque indexation + follow bot google&yahoo-->
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
-	<title>One Punch KO - Fight Incoming</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css" >
-	<link href="https://fonts.googleapis.com/css?family=Manjari:400,700%7CMontserrat%7COpen+Sans&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/af7a12231f.js" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<link rel="canonical" href="index.html" /> <!-- balise canonical : évite les doublons dans le moteur de recherche -->
+<meta name="robots" content="none,noodp,noydir"> <!--Bloque indexation + follow bot google&yahoo-->
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<title>One Punch KO - Fight Incoming</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link href="https://fonts.googleapis.com/css?family=Manjari:400,700%7CMontserrat%7COpen+Sans&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/af7a12231f.js" crossorigin="anonymous"></script>
 </head>
 <body id="body">
-	<main id="main">
-		<div id="top">
-			<h1 id="hp-title">One Punch KO : <abbr title=" mixed martial arts">MMA</abbr> fighters</h1>
-			<p id="sub_title"><abbr title=" mixed martial arts">MMA</abbr> fight en exclusif : Précommandez vos places</p>
-		</div>
-		<header id="header">
-			<nav id="navbar">
-				<div id="bloc-citation">
-					<p id="text-citation">
-					“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète</p>
-				</div>
-			<a href="index.html"><div class="nav-menu">Homepage</div></a>
-			<a href="#"><div class="nav-menu">Article</div></a>
-			<a href="#"><div class="nav-menu">Formation</div></a>
-			<a href="contact.html"><div class="nav-menu">Contact</div></a>
-		</nav>
-	</header>
-	<div id="hp-section-1" class="row">
-		<div id="background-color-text" class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
-			<!--<h2 id="title-h1">Développez votre vision et prenez une décision</h2>-->
-			<h2 id="background-title">Participez au prochain combat : n'attendez plus !</h2>
-			<p id="sub-h1-p">
-				Retrouvez en exlusivité sur notre webTV des combats de MMA en live ou en rediffusion toutes catégories confondu : vous pouvez aussi dès-maintenant pré-commander des tickets pour les prochains combats !<br><span id="span-video" onclick="showVideo()"><u>Vidéo trailer </u><i class="fa fa-video"></i></span>
-			</p>
-		</div>
-	</div>
-	<div id="showVideo" style="background-color: black;">
-		<button type="button" class="close" aria-label="Close" id="button-video" onclick="buttonVideo()">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<video id="video" width="100%" height="400px" loop controls>
-			<source src="media/boxing-slow-motion.mp4" type="video/mp4">
-		</video>
-	</div>
-	<div class="container">
-		<div class="row"  id="hp-section-2">
-			<div class="col-lg-4 col-md-4"> <!--FIGTHERS-->
-				<img id="picture-mac-gregor" class="fighters-profile" src="img/Mcgregor.png" alt="Mac Gregor - One punck KO fighter"/>
-			</div>
+<main id="main">
 
-			<div class="col-lg-4 col-md-4"> <!-- MIDDLE-INFO -->
-				<div class="row">
-					<div id="vertical-line"></div>
-					<div class="col-lg-12 col-md-12">
-						<img id="logo-opk" src="img/logo-opk.png">
-					</div>
-					<div class="col-lg-12 col-md-12">
-						<img id="mac-vs-jon" src="img/mg-vs-jj-v2.png">
-					</div>
-						<div class="col-lg-4 col-md-4">
-							1,75 m
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div style="background-color: red;height: 30px; width: 150px;">
-							TAILLE
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-							1,93 m
-					</div>
-				</div>
-			</div>
+<div id="top-bloc">
+	<h1 id="top-title">One Punch KO : <abbr title=" mixed martial arts">MMA</abbr> fighters</h1>
+	<p id="top-sub-title"><abbr title=" mixed martial arts">MMA</abbr> fight en exclusif : Précommandez vos places</p>
+</div>
 
-			<div class="col-lg-4 col-md-4"> <!--FIGTHERS-->
-				<img id="picture-jon-jones" class="fighters-profile" src="img/jonJones.png" alt="Jon Jones - One punck KO fighter"/>
-			</div>
+
+<header id="header">
+	<nav id="navbar">
+		<div id="bloc-citation">
+			<p id="text-citation">
+			“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète</p>
+		</div>
+		<a href="index.html"><div class="nav-menu">Homepage</div></a>
+		<a href="tickets.html"><div class="nav-menu">Tickets</div></a>
+		<a href="combats.html"><div class="nav-menu">Combats</div></a>
+		<a href="contact.html"><div class="nav-menu">Contact</div></a>
+	</nav>
+</header>
+
+
+<div id="section-1" class="row">
+	<div id="s1-bloc" class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+		<h2 id="s1-title">Participez au prochain combat : n'attendez plus !</h2>
+		<p id="s1-paragraphe">
+			Retrouvez en exlusivité sur notre webTV des combats de MMA en live ou en rediffusion toutes catégories confondu : vous pouvez aussi dès-maintenant pré-commander des tickets pour les prochains combats !<br><span id="span-video" onclick="showVideo()"><u>Vidéo trailer </u><i class="fa fa-video"></i></span>
+		</p>
+	</div>
+</div>
+
+<div id="showVideo">
+	<button class="close" type="button" aria-label="Close" id="button-video" onclick="buttonVideo()">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<video id="video" width="100%" height="400px" loop controls>
+		<source src="media/boxing-slow-motion.mp4" type="video/mp4">
+	</video>
+</div>
+
+
+<div class="container" id="s2-responsive-background">
+	<div class="row"  id="section-2">
+
+		<div class="col-lg-3 col-md-3 col-sm-12"> <!--   *   COLONNE 1   *   -->
+			<img class="fighters-img" id="mac-gregor"  src="img/Mcgregor.png" alt="Mac Gregor - One punck KO fighter"/>
+			<!--display responsive-->
+				<img class="fighters-img display-responsive" id="jon-jones-responsive" src="img/jonJones.png" alt="Jon Jones - One punck KO fighter"/>
+				<img class="display-responsive" id="logo-opk-responsive" src="img/logo-opk-responsive.png">
+			<!--display responsive-->
+		</div>									<!--   *   COLONNE 1   FIN -->
+
+
+		<div class="col-lg-6 col-md-6"> 		<!--   *   COLONNE 2   *   -->
+			<div class="row">
+
+				<div class="col-lg-12">
+					<img id="logo-opk" src="img/logo-opk.png">
+				</div>
+
+				<div class="col-lg-12" id="col-mac-vs-jon">
+					<img id="mac-vs-jon" src="img/mg-vs-jj-v2.png">
+				</div>
+
+				<div class="col-lg-4 col-md-4 s2-ul-xs">
+					<ul>
+						<li class="li-align li-align-right text-green">
+							<strong>McGregor</strong></li>
+						<li class="li-align li-align-right text-white">
+							Irlande
+						</li>
+						<li class="li-align li-align-right text-white">
+							1,75m
+						</li>
+						<li class="li-align li-align-right text-white">
+							70kg
+						</li>
+						<li class="li-align li-align-right text-white">
+							188cm
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4 col-md-4 s2-ul-xs">
+					<ul>
+						<!--display responsive -->
+							<li class="li-align li-align-center">
+								<strong>NAME</strong>
+							</li>
+						<!--display responsive -->
+						<li class="li-align li-align-center">
+							<strong>PAYS</strong>
+						</li>
+						<li class="li-align li-align-center">
+							<strong>TAILLE</strong>
+						</li class="li-align li-align-center">
+						<li class="li-align li-align-center">
+							<strong>POIDS</strong>
+						</li>
+						<li class="li-align li-align-center">
+							<strong>ALLONGE</strong>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 s2-ul-xs">
+					<ul>
+						<!--display responsive -->
+							<li class="li-align text-green">
+								<strong>Jon Jones</strong>
+							</li>
+						<!--display responsive -->
+						<li class="li-align text-white">
+							États-unis
+						</li>
+						<li class="li-align text-white">
+							1,93m
+						</li>
+						<li class="li-align text-white">
+							93kg
+						</li>
+						<li class="li-align text-white">
+							215cm
+						</li>
+					</ul>
+				</div>
+			</div><!--   *   COLONNE 2   *   -->
+
+
+		</div>									<!--   *   COLONNE 3   *   -->
+		<div class="col-lg-3 col-md-3"> <!--FIGTHERS-->
+			<img id="jon-jones" class="fighters-img" src="img/jonJones.png" alt="Jon Jones - One punck KO fighter"/>				<!--   *   COLONNE 3   *   -->
 		</div>
 	</div>
-	</main>
+</div>
+
+
+</main>
 <script>
 	var vid = document.getElementById("video");
 
-	function showVideo(){
+	function showVideo()
+	{
 		vid.play();
 		document.getElementById('showVideo').style.display = "flex";
-		document.getElementById('hp-section-1').style.display = "none";
+		document.getElementById('section-1').style.display = "none";
 		document.getElementById('button-video').style.display = "flex";
 	}
-
-	function buttonVideo(){
+	function buttonVideo()
+	{
 		vid.pause();
 		document.getElementById('showVideo').style.display = "none";
-		document.getElementById('hp-section-1').style.display = "flex";
+		document.getElementById('section-1').style.display = "flex";
 		document.getElementById('button-video').style.display = "none";	
 	}
 	

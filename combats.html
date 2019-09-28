@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="canonical" href="index.html" /> <!-- balise canonical : évite les doublons dans le moteur de recherche -->
+	<meta name="robots" content="none,noodp,noydir"> <!--Bloque indexation + follow bot google&yahoo-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+	<title>One Punch KO - Fight Incoming</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link href="https://fonts.googleapis.com/css?family=Manjari:400,700%7CMontserrat%7COpen+Sans&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/af7a12231f.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+	<main id="main">
+		<div id="top">
+			<h1 id="hp-title">One Punch KO : <abbr title=" mixed martial arts">MMA</abbr> fighters</h1>
+			<p id="sub_title"><abbr title=" mixed martial arts">MMA</abbr> fight en exclusif : Précommandez vos places</p>
+		</div>
+		<header id="header">
+			<nav id="navbar">
+				<div id="bloc-citation">
+					<p id="text-citation">
+					“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète</p>
+				</div>
+			<a href="index.html"><div class="nav-menu">Homepage</div></a>
+			<a href="tickets.html"><div class="nav-menu">Tickets</div></a>
+			<a href="combats.html"><div class="nav-menu">Combats</div></a>
+			<a href="contact.html"><div class="nav-menu">Contact</div></a>
+		</nav>
+	</header>
+	<div id="hp-section-1" class="row">
+		<div id="background-color-text" class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+			<!--<h2 id="title-h1">Développez votre vision et prenez une décision</h2>-->
+			<h2 id="background-title">Participez au prochain combat : n'attendez plus !</h2>
+			<p id="sub-h1-p">
+				Retrouvez en exlusivité sur notre webTV des combats de MMA en live ou en rediffusion toutes catégories confondu : vous pouvez aussi dès-maintenant pré-commander des tickets pour les prochains combats !<br><span id="span-video" onclick="showVideo()"><u>Vidéo trailer </u><i class="fa fa-video"></i></span>
+			</p>
+		</div>
+	</div>
+	<div id="showVideo" style="background-color: black;">
+		<button type="button" class="close" aria-label="Close" id="button-video" onclick="buttonVideo()">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<video id="video" width="100%" height="400px" loop controls>
+			<source src="media/boxing-slow-motion.mp4" type="video/mp4">
+		</video>
+	</div>
+</main>
+</body>
+</html>
