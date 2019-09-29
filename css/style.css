@@ -6,6 +6,7 @@
 */
 html, body{
 	margin: 			0;
+	padding:			0;
 	background-color: 	#070707;
 	font-size: 			16px;
 	font-family: 		'Montserrat','Manjari', sans-serif;
@@ -33,10 +34,10 @@ ul{
 #top-bloc{
 	padding-top: 		20px;
 	height:				140px;
-	color: 				#1f2421;
-	background-color: 	#6b818c;
-	border: 			solid 5px #1f2421;
+	background-color: 	#7B886F;
+	border: 			solid 5px #0e1116;
 	text-align: 		center;
+	color: 				#0e1116;
 }
 #top-title{
 	font-family:		'Montserrat', 'Manjari', sans-serif;
@@ -72,13 +73,13 @@ ul{
 .nav-menu{
 	padding: 			1.5rem;
 	height: 			100%;
-	border-left: 		1px solid #1f2421;
+	border-left: 		1px solid #0E1116;
 	text-align: 		center;
-	background-color: 	#6b818c;
+	background-color:	#4D5359;
 	color: 				white;
 }
 .nav-menu:hover{
-	color: 				#1f2421;
+	color: 				#0e1116;
 }
 /*   *   *   *   *   NAVBAR   *   *   *   */
 /*   END */
@@ -142,6 +143,9 @@ ul{
 	background-size: 	cover;
 	width: 				100%;
 }
+#s2-responsive-background{
+	padding: 			0;
+}
 #logo-opk{
 	display: 			block;
 	bottom: 			16px;
@@ -154,6 +158,10 @@ ul{
 }
 #mac-gregor{
 	float: 				right;
+}
+#jon-jones-overflow{
+	padding-right: 0;
+	overflow: hidden;
 }
 #jon-jones{
 	float: 				left;
@@ -189,7 +197,7 @@ ul{
 @media screen and (max-width: 1220px)
 {
 	#s1-title{		/*SECTION-1*/
-		font-size:		2.2em;
+		font-size:		2.17em;
 		padding-top:	15px;
 	}
 	#s1-paragraphe{
@@ -295,16 +303,25 @@ ul{
 	#section-1{
 		background-position:
 						right 15% top 0%;
+		border-top: 	1px solid black;
 	}
 	#s1-title{
 		font-size: 		1.5em;
 		padding-bottom: 10px;
 	}
+
+	/*   *   *   * contact-page   *   *   *   */
+
+	/*   *   *   * contact-page   *   *   *   */
+
 }
 @media screen and (max-width: 442px){
+	#section-2{
+		height: 330px;
+	}
 	.fighters-img{
 		height: 		280px;
-		margin-top: 	120px;
+		margin-top: 	50px;
 	}
 }
 
@@ -326,29 +343,44 @@ ul{
 	/*PAGE*		*   *   *   *   *   *	*PAGE*/
 	/*PAGE*		*		CONTACT		*	*PAGE*/
 	/*PAGE*		*   *   *   *   *   *	*PAGE*/
-#bloc-contact-page{
-	padding: 0;
+
+#b-t{
+	border-top: 		1px solid #1f2421;
+	}
+#contact-background-image{
+		background-image: 
+						url("../img/water.jpg");
+		background-position: center;
+		width: 			100%
+		height: 		auto;
+	}
+#contact-bloc-map{
+	padding: 			0;
+	height: 			400px;
+	width: 				100%;
+}
+#map-bloc{
+	height:				400px;
+	max-width: 			100%;
+	padding: 			0;
 }
 #map{
 	height: 			100%;
 	width: 				100%;
 	background-color: 	white;
 }
-#contact-page{
-	background-image: white;
-}
-#bloc-contact-top{
-	max-width: 			650px;
-	height: 			150px;
+#contact-bloc{
+	padding: 			10px;
+	background-color: 	white;
 	margin: 			auto;
-	margin-bottom: 		30px;
+}
+#contact-bloc-top{
+	width: 				100%;
+	height: 			150px;
+	margin:				0 0 20px 0;
 	padding: 			25px 15px 25px 15px;
 	text-align: 		center;
-	background-color:	white;
-}
-#formulaire{
-	max-width:			500px;
-	margin:				auto;
+	background-color:	#6b818c;
 }
 .checkbox-style{
 	border-radius:		80%;
@@ -373,4 +405,68 @@ label{
 
 	/*FIN *		*   *   *   *   *   *	*FIN */
 	/*PAGE*		*		CONTACT		*	*PAGE*/
+	/*FIN *		*   *   *   *   *   *	*FIN */
+
+
+
+
+
+	/*PAGE*		*   *   *   *   *   *	*PAGE*/
+	/*PAGE*		*		POSTERS		*	*PAGE*/
+	/*PAGE*		*   *   *   *   *   *	*PAGE*/
+
+#posters-row-1{
+	height: 			130px;
+	background-color:	#95FF5F;
+	color: 				black;
+	text-align: 		center;
+	margin:				auto;
+	margin-bottom: 		30px;
+}
+#posters-bloc-1{
+    padding:			37px;
+}
+#posters-bloc-2{
+	height:				60px;
+	margin-bottom: 		30px;
+	padding:			10px 30px 10px 30px; 
+	background-color: 	#95FF5F;
+}
+.h4{
+	color: 				#95FF5F;
+	margin-bottom: 		30px;
+}
+.p-t{
+	margin-top: 15px;
+}
+.bloc-vignette{
+	max-width: 			100%;
+	height: 			auto;
+	text-align: 		center;
+	margin-bottom: 		25px;
+}
+.background-vignette{
+	background-image:	url("../img/background-vignette.jpg");
+}
+.vignette-picture{
+	width: 				100%;
+	height: 			auto;
+}
+.sub-vignette{
+	background-image: url("../img/sub-vignette.jpg");
+}
+.sub-vignette-heavy{
+	background-image: url("../img/sub-vignette-heavy.jpg");
+}
+.vignette-description{
+	padding: 			15px 5px 5px 5px;
+}
+.vignette-fighters{
+	background-color: 	#95FF5F;
+	font-weight: 		bold;
+	font-size: 			1.2em;
+}
+
+	/*FIN *		*   *   *   *   *   *	*FIN */
+	/*PAGE*		*		POSTERS		*	*PAGE*/
 	/*FIN *		*   *   *   *   *   *	*FIN */
