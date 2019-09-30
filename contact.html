@@ -25,8 +25,8 @@
 			“Il ne faut pas lier un navire à une seule ancre, ni une vie à un seul espoir” - Epictète</p>
 		</div>
 		<a href="index.html"><div class="nav-menu">Homepage</div></a>
-		<a href="tickets.html"><div class="nav-menu">Tickets</div></a>
-		<a href="posters.html"><div class="nav-menu">Posters</div></a>
+		<a href="articles.html"><div class="nav-menu">Articles</div></a>
+		<a href="posters.html"><div class="nav-menu">Fighters</div></a>
 		<a href="contact.html"><div class="nav-menu">Contact</div></a>
 	</nav>
 </header>
@@ -36,53 +36,49 @@
 		<div class="col-lg-12 col-md-12" id="map-bloc">
 			<div id="map"></div>
 		</div>
-
-	<div class="container" id="bloc-contact-page">
-			<div class="col-lg-6 col-md-6">
-				<div id="contact-page">
-					<div id="bloc-contact-top">
-						<h3>Contact</h3>
-					<p>n'hésitez pas à nous contacter via ce formulaire ou retrouvez-nous sur place !</p>
-					</div>
-					<form id="formulaire">
-						<div class="form-section">
-							<label class="align-label">Je suis :</label><br>
-							<input type="radio" name="categories" value="particulier" required>
-							<label>un particulier</label>
-							<input type="radio" name="categories" value="entreprise" style="margin-left: 20px;">
-							<label>un professionnel</label>
-						</div>
-						<div class="form-section">
-							<label class="align-label" for="email">Votre addresse mail</label>
-							<input class="form-control" id="intput-email" type="email"  placeholder="Entrez votre email" minlenght="6" maxlenght="254" required>
-							<small id="email-info">Votre e-mail est chiffré dans notre base de donnée*</small>
-						</div>
-						<div class="form-section">
-							<label class="align-label" for="lastname" autocapitalize="characters" >Votre nom</label>
-							<input class="form-control" id="input-lastname" type="text" name="surname" placeholder="Entrez votre nom" minlenght="3" maxlenght="64" autocapitalize="word" required>
-						</div>
-						<div class="form-section">
-							<label class="align-label" for="firstname">Votre Prénom</label>
-							<input class="form-control" id="input-firstname" type="text" name="firstname" placeholder="Entrez votre prénom" minlenght="3" maxlenght="64" required>
-						</div>
-						<div class="form-section">
-							<label class="align-label" for="lastname">Sujet</label>
-							<textarea class="form-control" id="input-form-subject" type="text" name="surname" placeholder="Votre message" rows="5" required></textarea>
-						</div>
-						<div>
-							<input class="checkbox-style" type="checkbox">
-							<label>Je souhaite que vous me recontactiez dès que possible.</label>
-						</div>
-						<div>
-							<input class="checkbox-style" type="checkbox">
-							<label>Je ne souhaite pas recevoir d'email promotionel</label>
-						</div>
-						<button>envoyé</button>
-					</form>
-				</div>
-			</div>
-		</div>
 	</div>
+	<div class="container" id="bloc-contact-page">
+		<div id="contact-bloc">
+			<h3>Contact</h3>
+		<p>n'hésitez pas à nous contacter via ce formulaire ou retrouvez-nous sur place !</p>
+		</div>
+		<form id="formulaire">
+			<div class="form-section">
+				<label class="align-label">Je suis :</label><br>
+				<input type="radio" name="categories" value="particulier" required>
+				<label  style="margin-right: 20px;">un particulier</label><br class="display-responsive-xs">
+				<input type="radio" name="categories" value="entreprise">
+				<label>un professionnel</label>
+			</div>
+			<div class="form-section">
+				<label class="align-label" for="email">Votre addresse mail</label>
+				<input class="form-control" id="intput-email" type="email"  placeholder="Entrez votre email" minlenght="6" maxlenght="254" required>
+				<small id="email-info">Votre e-mail est chiffré dans notre base de donnée*</small>
+			</div>
+			<div class="form-section">
+				<label class="align-label" for="lastname" autocapitalize="characters" >Votre nom</label>
+				<input class="form-control" id="input-lastname" type="text" name="surname" placeholder="Entrez votre nom" minlenght="3" maxlenght="64" autocapitalize="word" required>
+			</div>
+			<div class="form-section">
+				<label class="align-label" for="firstname">Votre Prénom</label>
+				<input class="form-control" id="input-firstname" type="text" name="firstname" placeholder="Entrez votre prénom" minlenght="3" maxlenght="64" required>
+			</div>
+			<div class="form-section">
+				<label class="align-label" for="lastname">Sujet</label>
+				<textarea class="form-control" id="input-form-subject" type="text" name="surname" placeholder="Votre message" rows="5" required></textarea>
+			</div>
+			<div>
+				<input class="checkbox-style" type="checkbox">
+				<label class="align-responsive">Je souhaite que vous me recontactiez dès que possible.</label>
+			</div>
+			<div style="display: inline-block;">
+				<input class="checkbox-style" type="checkbox">
+					<label class="align-responsive">Je ne souhaite pas recevoir d'email promotionel</label>
+			</div><br>
+			<button>envoyé</button>
+		</form>
+	</div>
+	<div class="clear"></div>
 </div>
 </main>
 <script>
